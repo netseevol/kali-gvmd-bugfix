@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 01 Sep 2025 17:23:57 +0200
+Source: gvmd
+Binary: gvmd gvmd-common gvmd-dbgsym
+Architecture: all amd64
+Version: 26.2.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Changed-By: Sophie Brun <sophie@kali.org>
+Description:
+ gvmd       - Manager Module of Greenbone Vulnerability Manager
+ gvmd-common - architecture independent files for Greenbone Vulnerability Manage
+Changes:
+ gvmd (26.2.1-1) unstable; urgency=medium
+ .
+   * New upstream version 26.2.1
+   * Revert "Enable agent management and integration": it breaks gvmd
+   * Setup gvmd log dir in debian/rules
+Checksums-Sha1:
+ 7600758d125f102e76a0d87b83c964846b7802f4 115800 gvmd-common_26.2.1-1_all.deb
+ 44a070efa308ffb50f9595d4669bd3c501595dd5 1700416 gvmd-dbgsym_26.2.1-1_amd64.deb
+ 28aa551c73abde38737717da0c151e642b7a33fc 11815 gvmd_26.2.1-1_amd64.buildinfo
+ 432ff30dabcb661fef6b3a949edaaadcaebef978 714552 gvmd_26.2.1-1_amd64.deb
+Checksums-Sha256:
+ d90502438968978e2935a78523026b5988e1e29ef1f66edf7a33870130153c49 115800 gvmd-common_26.2.1-1_all.deb
+ 7fa20ae32b16bc5bea83eb386d3d65a888d52e7d0fd915573d02d4524a7925ad 1700416 gvmd-dbgsym_26.2.1-1_amd64.deb
+ 55b282f6c70dbc3f62f494eb5e5a5f4333abe46602738f39d8a72ff21c2880d3 11815 gvmd_26.2.1-1_amd64.buildinfo
+ ca86dc1748d477a6ceae30f3469fd776e7688c4fe58983b28fececa76552f243 714552 gvmd_26.2.1-1_amd64.deb
+Files:
+ 19d251f690afd19a4175b2993b46ca11 115800 net optional gvmd-common_26.2.1-1_all.deb
+ 97b1821c838beb5383881b04f89f1384 1700416 debug optional gvmd-dbgsym_26.2.1-1_amd64.deb
+ d8df0c5f192c6394d079a8e4992ccb89 11815 admin optional gvmd_26.2.1-1_amd64.buildinfo
+ 1670a7e11751b9fe791dc1580105569f 714552 net optional gvmd_26.2.1-1_amd64.deb
